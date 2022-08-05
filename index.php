@@ -2,5 +2,5 @@
 
 echo "Hello world";
 
-echo"teste";
+echo "bem vindo"
 ?>
