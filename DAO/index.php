@@ -58,7 +58,7 @@ echo $aluno;
 
 */
 
-/*Atualizando uma coluna no banco de dados*/
+/*Atualizando uma coluna no banco de dados
 
 $usuario = new Usuario();
 
@@ -66,7 +66,17 @@ $usuario->loadById(5);
 
 $usuario->update("Professor","Amigo1234");
 
-echo $usuario;
+echo $usuario; */
+
+/*Deletando o usuario do banco de dados*/
+
+$usuario = new Usuario();
+
+$usuario->loadById(6);
+
+$usuario->delete();
+
+echo $usuario; 
 
 
 
