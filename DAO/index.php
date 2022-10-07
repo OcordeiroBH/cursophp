@@ -34,9 +34,43 @@ echo json_encode($search);
 
 */
 
-$sql = new Sql();
+/*
 $usuario = new Usuario(); 
 $usuario->login("joao","Bruno123");
 echo $usuario;
+*/ 
+
+/*Insere um dado no banco
+$aluno = new Usuario();
+$aluno->setDeslogin('Aluno');
+$aluno->setDessenha('A1un0');
+$aluno->insert();
+
+echo $aluno; 
+
+*/
+
+/*insere um dado no banco usando metodo construtor
+
+$aluno = new Usuario('Amigo','123654');
+$aluno->insert();
+echo $aluno;
+
+*/
+
+/*Atualizando uma coluna no banco de dados*/
+
+$usuario = new Usuario();
+
+$usuario->loadById(5);
+
+$usuario->update("Professor","Amigo1234");
+
+echo $usuario;
+
+
+
+
+
 
 ?>
